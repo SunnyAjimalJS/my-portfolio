@@ -1,0 +1,966 @@
+/* SASS KEY */
+
+$background: #42a7b9ff;
+$background2: #8cbcb9;
+$color: #2b3a41;
+$font: "Montserrat", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: $color;
+  height: 300px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 3px solid $background2;
+  box-shadow: 0 0px 10px 10px #d6d5d533;
+  padding: 20px;
+  margin-left: -30px;
+  margin-top: -10px;
+  .sunny {
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    opacity: 0.85;
+  }
+
+  #logo {
+    color: $background2;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #logo div {
+    height: 3px;
+    width: 200px;
+    background-color: $background2;
+    margin-left: 50px;
+  }
+  .s {
+    margin-left: 10px;
+    font-size: 45px;
+    font-family: $font;
+  }
+  .ajimal {
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: $font;
+    letter-spacing: 0.2em;
+  }
+
+  .s {
+    animation: animated-text 2s steps(30, end) 1s 1 normal both;
+  }
+
+  /* text animation */
+
+  @keyframes animated-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 272px;
+    }
+  }
+
+  #socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 180px;
+    margin-bottom: 10px;
+  }
+}
+
+//HOVER/CLICK EXPANDING ICONS
+#contact {
+  transition: 1s;
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+.fa-github {
+  transition: 1s;
+  color: $background2;
+  &:hover {
+    transform: scale(1.3);
+    opacity: 0.5;
+  }
+}
+.fa-linkedin-in {
+  transition: 1s;
+  color: $background2;
+  &:hover {
+    transform: scale(1.3);
+    opacity: 0.5;
+  }
+}
+
+.fa-envelope {
+  transition: 1s;
+  color: $background2;
+  &:hover {
+    transform: scale(1.3);
+    opacity: 0.5;
+  }
+}
+
+#cv {
+  transition: 1s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+//END OF HOVER/CLICK SCSS
+
+section.about1 {
+  width: 320px;
+  height: 450px;
+  padding: 10px;
+  margin-left: 3px;
+  // margin: 0 auto;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.title {
+  color: $background2;
+  font-size: 14px;
+  font-family: $font;
+}
+
+.bodyText {
+  line-height: 1.6;
+  color: #b4b4b4;
+  font-size: 12px;
+  font-family: $font;
+}
+
+.maincontainer3 {
+  margin-top: 500px;
+  height: 400px;
+}
+
+.photos {
+  display: flex;
+  flex-direction: row;
+  background-color: $background;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  background-color: $background;
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* END */
+
+//SCROLLBAR CHANGE
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #8cbcb9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8cbcb9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4f6d7a;
+}
+//END
+
+.photos {
+  height: 51px;
+}
+
+//Project section
+.projectText {
+  text-align: center;
+  height: 50px;
+  width: 370px;
+  margin-left: -25px;
+  margin-top: 20px;
+}
+section.projectList {
+  width: 300px;
+  height: 3300px;
+  // border: 2px solid yellow;
+  margin-left: -12px;
+}
+
+.cardList {
+  height: 3300px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 45px;
+}
+
+/* CARDS */
+// .cardFront {
+//   border: 2px solid yellow;
+//   height: 340px;
+//   width: 275px;
+//   margin-bottom: 10px;
+// }
+
+article.card {
+  text-align: center;
+  width: 280px;
+  height: 340px;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  // border: 2px solid greenyellow;
+
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: $background2;
+    font-family: $font;
+  }
+
+  p {
+    text-align: center;
+    margin-top: -10px;
+    color: $background2;
+    font-size: 13px;
+    font-family: $font;
+  }
+}
+
+.projectShot {
+  // border: 2px solid white;
+  height: 120px;
+  width: 260px;
+  margin-right: 10px;
+}
+
+.projectInfo {
+  // border: 2px solid white;
+  text-align: left;
+  height: 130px;
+  width: 250px;
+  margin-bottom: -40px;
+  margin-left: 11px;
+  margin-top: 20px;
+}
+
+.cardIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.iconOne,
+.iconTwo {
+  margin-top: 50px;
+  height: 40px;
+  width: 50px;
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    outline: none;
+    opacity: 0.5;
+  }
+}
+.fa-globe,
+.fa-code {
+  color: $background2;
+}
+
+// .scene{
+//   height: 340px
+//   border: 2px solid white;
+// }
+// .scene:hover{
+//   transition: 0.2s;
+//   box-shadow: 0 10px 20px 0 #ffffff40,
+//       0 10px 20px 0 #ffffff40;
+// }
+
+
+.navbar-menu {
+  background-color: $background2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  transform: translateX(-100%);
+  transition: 0.4s;
+}
+
+.navbar-menu.active {
+  transform: translateX(0);
+  transition: 0.5s;
+}
+
+.navbar-menu .menu-listing {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.menu-listing li {
+  display: inline-block;
+}
+
+.menu-listing li a {
+  background-color: $background2;
+  color: $color;
+  font-family: $font;
+  display: block;
+  font-size: 1rem;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+.menu-listing li a:hover {
+  background-color: $color;
+  color: $background2;
+  transition: 0.5s;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $background2;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: 0.4s;
+  z-index: 9999;
+}
+
+.menu span {
+  position: absolute;
+  height: 3px;
+  width: 25px;
+  background-color: $color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.menu span:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  background-color: $color;
+  height: 3px;
+  width: 25px;
+  transition: 0.3s;
+}
+
+.menu span:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  background-color: $color;
+  height: 3px;
+  width: 25px;
+  transition: 0.3s;
+}
+
+.menu.active span {
+  background-color: transparent;
+}
+
+.menu.active span:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.menu.active span:after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-menu {
+    height: auto;
+    z-index: 4;
+  }
+
+  .menu-listing li {
+    display: block;
+  }
+
+  .navbar-menu .menu-listing {
+    text-align: center;
+  }
+}
+
+
+/* For Larger MObiles */
+@media screen and (min-width: 425px) {
+  /* MEDIA QUERY STARTS HERE */
+
+  .navbar {
+    width: 400px;
+  }
+
+  section.about1 {
+    margin-left: 3px;
+    width: 400px;
+  }
+
+  .projectText {
+    width: 420px;
+    margin-left: 3px;
+  }
+
+  .cardList {
+    margin-left: 95px;
+  }
+
+  /* MEDIA QUERY ENDS HERE */
+}
+
+//For Tablets
+@media screen and (min-width: 700px) {
+  /* MEDIA QUERY STARTS HERE */
+
+  .navbar {
+    width: 750px;
+  }
+
+  section.about1 {
+    margin-left: 175px;
+    width: 400px;
+  }
+
+  .projectText {
+    width: 420px;
+    margin-left: 175px;
+  }
+
+  .cardList {
+    margin-left: 265px;
+  }
+  /* MEDIA QUERY ENDS HERE */
+}
+
+//FOR DESKTOPS
+@media screen and (min-width: 900px) {
+  /* MEDIA QUERY STARTS HERE */
+
+  .navbar {
+    width: 290px;
+    position: fixed;
+    height: 110%;
+    margin-top: -100px;
+    border-right: 3px solid $background2;
+    .sunny {
+      margin-top: 80px;
+      margin-left: 25px;
+    }
+  }
+
+  #logo {
+    color: $background2;
+    height: 200px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -150px;
+    div.line {
+      height: 3px;
+      width: 200px;
+      background-color: $background2;
+      margin-left: 65px;
+    }
+
+    .s {
+      margin-left: 30px;
+      font-size: 60px;
+      font-family: $font;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .s {
+      animation: animated-text 2s steps(30, end) 1s 1 normal both;
+    }
+
+    /* text animation */
+
+    @keyframes animated-text {
+      from {
+        width: 0;
+      }
+      to {
+        width: 272px;
+      }
+    }
+
+    .ajimal {
+      margin-left: 35px;
+      font-size: 25px;
+      font-family: $font;
+      letter-spacing: 0.2em;
+    }
+  }
+
+  div#socials {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin-top: 150px;
+    margin-left: 25px;
+  }
+
+  section.about1 {
+    margin-bottom: 200px;
+    color: #b4b4b4;
+    width: 925px;
+    height: 475px;
+    padding: 10px;
+    margin-left: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+  }
+
+  .scrollDown {
+    margin-top: 200px;
+    margin-left: 460px;
+    height: 60px;
+    width: 25px;
+    color: $background2;
+  }
+
+  .container {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+
+  .chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+
+  .chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+
+  .chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+
+  .chevron:before,
+  .chevron:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: $background2;
+  }
+
+  .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+
+  @keyframes move {
+    25% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+
+  .text {
+    display: block;
+    margin-top: 75px;
+    margin-left: -30px;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 12px;
+    color: $background2;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0.25;
+    animation: pulse 2s linear alternate infinite;
+  }
+
+  @keyframes pulse {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .bodyText {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  div#projects {
+    margin-left: 350px;
+  }
+
+  .cardOne {
+    grid-area: c1;
+  }
+
+  .cardTwo {
+    grid-area: c2;
+  }
+
+  .cardThree {
+    grid-area: c3;
+  }
+
+  .cardFour {
+    grid-area: c4;
+  }
+
+  .cardFive {
+    grid-area: c5;
+  }
+
+  .cardSix {
+    grid-area: c6;
+  }
+
+  .cardSeven {
+    grid-area: c7;
+  }
+
+  .cardEight {
+    grid-area: c8;
+  }
+
+  main.cardlist {
+    margin-left: -90px;
+    display: grid;
+    height: 800px;
+    grid-template-areas:
+      "c1 c2 c3"
+      "c4 c5 c6"
+      "c7 . c8";
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 45px;
+    padding: 50px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
+
+  //Project section
+  .projectText {
+    text-align: center;
+    height: 50px;
+    width: 940px;
+    margin-left: -50px;
+    margin-top: -125px;
+  }
+
+  article.card p {
+    text-align: center;
+    margin-top: -10px;
+    font-size: 13px;
+  }
+
+  .projectList {
+    width: 325px;
+    margin-left: -35px;
+    height: 3300px;
+  }
+
+  .cardList {
+    // border: 2px solid white;
+    height: 3300px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectInfo {
+    // border: 2px solid white;
+    text-align: left;
+    height: 130px;
+    width: 250px;
+    margin-bottom: -40px;
+    margin-left: 11px;
+    margin-top: 20px;
+  }
+
+  .card:hover {
+    transition: 0.5s;
+    box-shadow: 0 10px 20px 0 #ffffff40, 0 10px 20px 0 #ffffff40;
+    transform: scale(1.1);
+  }
+
+  // .fa-globe, .fa-code{
+  //   color:$background2;
+  // }
+
+  /* MEDIA QUERY ENDS HERE */
+}
+
+@media screen and (min-width: 1400px) {
+  /* MEDIA QUERY STARTS HERE */
+  div.projecttext {
+    text-align: left;
+    height: 130px;
+    width: 900px;
+    margin-bottom: -90px;
+    // margin-left: -11px;
+    margin-top: -50px;
+  }
+
+  main.cardlist {
+    // border: 2px solid white;
+    margin-left: -20px;
+    width: 300px;
+    display: grid;
+    width: 400px;
+    height: 800px;
+    grid-template-areas:
+      "c1 c2 c3"
+      "c4 c5 c6"
+      "c7 . c8";
+    grid-template-columns: repeat(2, 1fr);
+    // grid-auto-rows: minmax(100px, 100px);
+    grid-gap: 60px;
+    padding: 50px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
+
+  /* MEDIA QUERY ENDS HERE */
+}
+
+/* .photos {
+          display: flex;
+          flex-direction: column;
+          height: 325px;
+ 
+    } */
+
+//   #contact:hover {
+//     transform: scale(1.3);
+//   }
+//   .fa-github {
+//     transition: 1s;
+//     color: $background2;
+//   }
+//   .fa-github:hover {
+//     transform: scale(1.3);
+//   }
+//   .fa-linkedin-in {
+//     transition: 1s;
+//     color: $background2;
+//   }
+//   .fa-linkedin-in:hover {
+//     transform: scale(1.3);
+//   }
+//   .fa-envelope {
+//     transition: 1s;
+//     color: $background2;
+//   }
+//   .fa-envelope:hover {
+//     transform: scale(1.3);
+//   }
+
+// }
+
+// .scene{
+//   height: 340px
+//   border: 2px solid white;
+// }
+// .scene
+
+// .logos{
+//   height: 400px;
+//   width: 700px;
+//   margin-top: 50px;
+//   display: flex;
+// }
+
+// .reactLogo{
+//   height: 200px;
+//   width: 200px;
+//   background-image: url("./Assets/1200px-React-icon.svg.png");
+//   background-size: contain;
+//   background-color: none;
+//   background-repeat: no-repeat;
+// }
+
+// .techLogos{
+//   height: 200px;
+//   width: 300px;
+//   background-image: url("Assets/techlogos.jpg");
+//   background-repeat: no-repeat;
+//   background-size: contain;
+// }

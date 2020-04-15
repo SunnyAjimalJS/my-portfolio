@@ -1,0 +1,64 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border box;
+    }
+
+.main {
+    height: 1000vh;
+    width: 100vw;
+}
+
+.main {
+    display:flex;
+}
+
+.maincontainer {
+    border: 2px solid black;
+    height: 130px;
+    width: 100vw;
+    background-color: aqua;
+    margin: 0 auto;
+    z-index: 0;
+    display:flex;
+    flex-direction: row;
+}
+
+.container2 {
+    border: 2px solid black;
+    z-index: 1;
+    height: 352px;
+    width: 100vw; 
+    background-color: blue;
+}
+
+.about {
+    height: 140px;
+    width: 100vw;
+    background-color: beige;
+}
+
+.photos {
+    border: 2px solid black;
+    height: 200px;
+    width: 100vw;
+    background-color: brown;
+}
+
+.projects  {
+    border: 2px solid black;
+    z-index: 1;
+    height: 400px;
+    width: 100vw; 
+    background-color: aquamarine;
+}
+
+@media screen and (min-width:600px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        position:fixed;
+    
+    }
+
+}
