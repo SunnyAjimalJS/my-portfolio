@@ -652,7 +652,7 @@ article.card p {
 @media screen and (min-width: 900px) {
   /* MEDIA QUERY STARTS HERE */
   .navbar {
-    width: 290px;
+    width: 310px;
     position: fixed;
     height: 110%;
     margin-top: -100px;
