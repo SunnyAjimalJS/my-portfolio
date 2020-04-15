@@ -23,7 +23,7 @@ body {
 .navbar {
   background-color: $color;
   height: 300px;
-  width: 380px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -39,6 +39,7 @@ body {
     width: 125px;
     height: 125px;
     opacity: 0.85;
+    margin-left: 20px;
   }
 
   #logo {
@@ -49,6 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 15px;
   }
   #logo div {
     height: 3px;
@@ -57,7 +59,7 @@ body {
     margin-left: 50px;
   }
   .s {
-    margin-left: 10px;
+    margin-left: 15px;
     font-size: 45px;
     font-family: $font;
   }
@@ -89,6 +91,7 @@ body {
     justify-content: space-around;
     width: 180px;
     margin-bottom: 10px;
+    margin-left: 18px;
   }
 }
 
@@ -519,6 +522,7 @@ article.card {
   top: 0;
 }
 
+//BOOTSTRAP NAVBAR MEDIA QUERY FOR MOBILE:
 @media only screen and (max-width: 767px) {
   .navbar-menu {
     height: auto;
@@ -535,12 +539,12 @@ article.card {
 }
 
 
-/* For Larger MObiles */
-@media screen and (min-width: 425px) {
+/* For Larger Mobiles */
+@media screen and (min-width: 330px) and (max-width: 700px) {
   /* MEDIA QUERY STARTS HERE */
 
   .navbar {
-    width: 400px;
+    width: 500px;
   }
 
   section.about1 {
@@ -667,7 +671,7 @@ article.card {
   }
 
   .scrollDown {
-    margin-top: 200px;
+    margin-top: 110px;
     margin-left: 460px;
     height: 60px;
     width: 25px;
@@ -900,6 +904,8 @@ article.card {
 
   /* MEDIA QUERY ENDS HERE */
 }
+
+//COMMENT END FOR MEDIA QUERIES
 
 /* .photos {
           display: flex;
