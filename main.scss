@@ -313,13 +313,13 @@ section.about1 {
 }
 section.projectList {
   width: 300px;
-  height: 1500px;
+  height: 2000px;
   // border: 2px solid yellow;
   margin-left: -5px;
 }
 
 .cardList {
-  height: 1500px;
+  height: 2200px;
   width: 260px;
   display: flex;
   flex-direction: column;
@@ -772,6 +772,7 @@ article.card {
 
   div#projects {
     margin-left: 350px;
+    height: 1000px;
   }
 
   .cardOne {
@@ -847,7 +848,7 @@ article.card {
   // }
   .cardList {
     // border: 2px solid white;
-    height: 1300px;
+    height: 2000px;
     width: 325px;
     display: flex;
     flex-direction: column;
