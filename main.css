@@ -18,7 +18,7 @@ body {
 .navbar {
   background-color: #2b3a41;
   height: 300px;
-  width: 350px;
+  width: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,7 +185,7 @@ section.about1 {
   width: 320px;
   height: 450px;
   padding: 10px;
-  margin-left: 3px;
+  margin-left: 12px;
   margin-top: 30px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -360,18 +360,18 @@ section.about1 {
   text-align: center;
   height: 50px;
   width: 370px;
-  margin-left: -25px;
+  margin-left: -20px;
   margin-top: 20px;
 }
 
 section.projectList {
   width: 300px;
-  height: 3300px;
-  margin-left: -12px;
+  height: 1500px;
+  margin-left: -5px;
 }
 
 .cardList {
-  height: 3300px;
+  height: 1500px;
   width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -617,15 +617,15 @@ article.card p {
     width: 500px;
   }
   section.about1 {
-    margin-left: 3px;
+    margin-left: 30px;
     width: 400px;
   }
   .projectText {
-    width: 420px;
-    margin-left: 3px;
+    width: 400px;
+    margin-left: 30px;
   }
   .cardList {
-    margin-left: 95px;
+    margin-left: 110px;
   }
   /* MEDIA QUERY ENDS HERE */
 }
@@ -633,7 +633,7 @@ article.card p {
 @media screen and (min-width: 700px) {
   /* MEDIA QUERY STARTS HERE */
   .navbar {
-    width: 750px;
+    width: 800px;
   }
   section.about1 {
     margin-left: 175px;
@@ -652,7 +652,7 @@ article.card p {
 @media screen and (min-width: 900px) {
   /* MEDIA QUERY STARTS HERE */
   .navbar {
-    width: 310px;
+    width: 290px;
     position: fixed;
     height: 110%;
     margin-top: -100px;
@@ -665,7 +665,8 @@ article.card p {
   #logo {
     color: #8cbcb9;
     height: 200px;
-    width: 100px;
+    width: 200px;
+    margin-right: 15px;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -729,7 +730,7 @@ article.card p {
             flex-direction: column;
     height: 200px;
     margin-top: 150px;
-    margin-left: 25px;
+    margin-right: -20px;
   }
   section.about1 {
     margin-bottom: 200px;
@@ -753,6 +754,7 @@ article.card p {
     position: relative;
     width: 24px;
     height: 24px;
+    margin-left: -20px;
   }
   .chevron {
     position: absolute;
@@ -921,7 +923,7 @@ article.card p {
   .projectText {
     text-align: center;
     height: 50px;
-    width: 940px;
+    width: 920px;
     margin-left: -50px;
     margin-top: -125px;
   }
@@ -930,13 +932,13 @@ article.card p {
     margin-top: -10px;
     font-size: 13px;
   }
-  .projectList {
+  section.projectList {
     width: 325px;
-    margin-left: -35px;
-    height: 3300px;
+    margin-left: -15px;
+    height: 1000px;
   }
   .cardList {
-    height: 3300px;
+    height: 1300px;
     width: 325px;
     display: -webkit-box;
     display: -ms-flexbox;

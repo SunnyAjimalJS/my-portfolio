@@ -23,7 +23,7 @@ body {
 .navbar {
   background-color: $color;
   height: 300px;
-  width: 350px;
+  width: 380px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -142,7 +142,7 @@ section.about1 {
   width: 320px;
   height: 450px;
   padding: 10px;
-  margin-left: 3px;
+  margin-left: 12px;
   // margin: 0 auto;
   margin-top: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -308,18 +308,18 @@ section.about1 {
   text-align: center;
   height: 50px;
   width: 370px;
-  margin-left: -25px;
+  margin-left: -20px;
   margin-top: 20px;
 }
 section.projectList {
   width: 300px;
-  height: 3300px;
+  height: 1500px;
   // border: 2px solid yellow;
-  margin-left: -12px;
+  margin-left: -5px;
 }
 
 .cardList {
-  height: 3300px;
+  height: 1500px;
   width: 260px;
   display: flex;
   flex-direction: column;
@@ -548,17 +548,17 @@ article.card {
   }
 
   section.about1 {
-    margin-left: 3px;
+    margin-left: 30px;
     width: 400px;
   }
 
   .projectText {
-    width: 420px;
-    margin-left: 3px;
+    width: 400px;
+    margin-left: 30px;
   }
 
   .cardList {
-    margin-left: 95px;
+    margin-left: 110px;
   }
 
   /* MEDIA QUERY ENDS HERE */
@@ -569,7 +569,7 @@ article.card {
   /* MEDIA QUERY STARTS HERE */
 
   .navbar {
-    width: 750px;
+    width: 800px;
   }
 
   section.about1 {
@@ -593,7 +593,7 @@ article.card {
   /* MEDIA QUERY STARTS HERE */
 
   .navbar {
-    width: 310px;
+    width: 290px;
     position: fixed;
     height: 110%;
     margin-top: -100px;
@@ -607,7 +607,8 @@ article.card {
   #logo {
     color: $background2;
     height: 200px;
-    width: 100px;
+    width: 200px;
+    margin-right: 15px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -656,7 +657,7 @@ article.card {
     flex-direction: column;
     height: 200px;
     margin-top: 150px;
-    margin-left: 25px;
+    margin-right: -20px;
   }
 
   section.about1 {
@@ -682,6 +683,7 @@ article.card {
     position: relative;
     width: 24px;
     height: 24px;
+    margin-left: -20px;
   }
 
   .chevron {
@@ -823,7 +825,7 @@ article.card {
   .projectText {
     text-align: center;
     height: 50px;
-    width: 940px;
+    width: 920px;
     margin-left: -50px;
     margin-top: -125px;
   }
@@ -834,15 +836,18 @@ article.card {
     font-size: 13px;
   }
 
-  .projectList {
+  section.projectList {
     width: 325px;
-    margin-left: -35px;
-    height: 3300px;
+    margin-left: -15px;
+    height: 1000px;
   }
 
+  // div#projects{
+  //   height: 200px;
+  // }
   .cardList {
     // border: 2px solid white;
-    height: 3300px;
+    height: 1300px;
     width: 325px;
     display: flex;
     flex-direction: column;
