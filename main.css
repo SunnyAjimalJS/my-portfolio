@@ -627,6 +627,90 @@ article.card p {
   .cardList {
     margin-left: 110px;
   }
+  article.card {
+    text-align: center;
+    width: 280px;
+    height: 340px;
+    position: relative;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 2px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  article.card h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #8cbcb9;
+    font-family: "Montserrat", sans-serif;
+  }
+  article.card p {
+    text-align: center;
+    margin-top: -10px;
+    color: #8cbcb9;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .projectShot {
+    height: 120px;
+    width: 260px;
+    margin-right: 10px;
+  }
+  .projectInfo {
+    text-align: left;
+    height: 130px;
+    width: 250px;
+    margin-bottom: -40px;
+    margin-left: 11px;
+    margin-top: 20px;
+  }
+  .cardIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .iconOne,
+  .iconTwo {
+    margin-top: 50px;
+    height: 40px;
+    width: 50px;
+  }
+  .iconOne:hover,
+  .iconTwo:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    cursor: pointer;
+    outline: none;
+    opacity: 0.5;
+  }
+  .fa-globe,
+  .fa-code {
+    color: #8cbcb9;
+  }
   /* MEDIA QUERY ENDS HERE */
 }
 
