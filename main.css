@@ -386,7 +386,6 @@ section.projectList {
   margin-left: 45px;
 }
 
-/* CARDS */
 article.card {
   text-align: center;
   width: 280px;
@@ -1083,11 +1082,4 @@ article.card p {
   }
   /* MEDIA QUERY ENDS HERE */
 }
-
-/* .photos {
-          display: flex;
-          flex-direction: column;
-          height: 325px;
- 
-    } */
 /*# sourceMappingURL=main.css.map */
