@@ -482,7 +482,7 @@ article.card p {
 
 .navbar-menu {
   background-color: #8cbcb9;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -579,10 +579,7 @@ article.card p {
   width: 25px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.menu.active span {
-  background-color: transparent;
+  opacity: 1;
 }
 
 .menu.active span:before {
@@ -947,6 +944,7 @@ article.card p {
   }
   .title {
     font-size: 18px;
+    text-align: center;
   }
   .bodyText {
     font-size: 16px;
