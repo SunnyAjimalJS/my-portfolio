@@ -392,7 +392,7 @@ article.card {
 }
 .iconOne,
 .iconTwo {
-  margin-top: 50px;
+  margin-top: 30px;
   height: 40px;
   width: 50px;
   &:hover {
@@ -406,17 +406,6 @@ article.card {
 .fa-code {
   color: $background2;
 }
-
-// .scene{
-//   height: 340px
-//   border: 2px solid white;
-// }
-// .scene:hover{
-//   transition: 0.2s;
-//   box-shadow: 0 10px 20px 0 #ffffff40,
-//       0 10px 20px 0 #ffffff40;
-// }
-
 
 .navbar-menu {
   background-color: $background2;
@@ -565,7 +554,7 @@ article.card {
   article.card {
     text-align: center;
     width: 280px;
-    height: 460px;
+    height: 470px;
     position: relative;
     transition: transform 1s;
     transform-style: preserve-3d;
