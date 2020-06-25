@@ -389,7 +389,7 @@ section.projectList {
 article.card {
   text-align: center;
   width: 280px;
-  height: 340px;
+  height: 375px;
   position: relative;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -998,7 +998,9 @@ article.card p {
     display: -ms-grid;
     display: grid;
     height: 800px;
-        grid-template-areas: "c1 c2 c3" "c4 c5 c6" "c7 . c8";
+        grid-template-areas: "c1 c2 c3"
+ "c4 c5 c6"
+ "c7 . c8";
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     grid-gap: 45px;
@@ -1072,7 +1074,9 @@ article.card p {
     display: grid;
     width: 400px;
     height: 800px;
-        grid-template-areas: "c1 c2 c3" "c4 c5 c6" "c7 . c8";
+        grid-template-areas: "c1 c2 c3"
+ "c4 c5 c6"
+ "c7 . c8";
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 60px;
