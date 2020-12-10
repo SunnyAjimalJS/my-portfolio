@@ -429,7 +429,7 @@ section.projectList {
 article.card {
   text-align: center;
   width: 280px;
-  height: 400px;
+  height: 600px;
   position: relative;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -458,7 +458,7 @@ article.card h3 {
   margin-top: 5px;
   margin-bottom: 10px;
   font-size: 14px;
-  color: #8cbcb9;
+  color: white;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -671,7 +671,6 @@ article.card p {
     text-align: center;
     width: 280px;
     height: 700px;
-    position: relative;
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     transition: transform 1s;

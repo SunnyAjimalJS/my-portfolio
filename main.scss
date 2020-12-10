@@ -367,7 +367,7 @@ section.projectList {
 article.card {
   text-align: center;
   width: 280px;
-  height: 400px;
+  height: 600px;
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -383,7 +383,7 @@ article.card {
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 14px;
-    color: $background2;
+    color: white;
     font-family: $font;
   }
 
@@ -580,7 +580,7 @@ article.card {
     text-align: center;
     width: 280px;
     height: 700px;
-    position: relative;
+
     transition: transform 1s;
     transform-style: preserve-3d;
     display: flex;
