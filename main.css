@@ -647,7 +647,7 @@ article.card p {
 }
 
 /* For Larger Mobiles */
-@media screen and (min-width: 330px) and (max-width: 700px) {
+@media screen and (min-width: 300px) and (max-width: 700px) {
   /* MEDIA QUERY STARTS HERE */
   .navbar {
     width: 500px;
