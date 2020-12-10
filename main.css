@@ -386,10 +386,50 @@ section.projectList {
   margin-left: 45px;
 }
 
+.cardOne {
+  width: 280px;
+  height: 700px;
+}
+
+.cardTwo {
+  width: 280px;
+  height: 400px;
+}
+
+.cardThree {
+  width: 280px;
+  height: 400px;
+}
+
+.cardFour {
+  width: 280px;
+  height: 400px;
+}
+
+.cardFive {
+  width: 280px;
+  height: 400px;
+}
+
+.cardSix {
+  width: 280px;
+  height: 400px;
+}
+
+.cardSeven {
+  width: 280px;
+  height: 400px;
+}
+
+.cardEight {
+  width: 280px;
+  height: 400px;
+}
+
 article.card {
   text-align: center;
   width: 280px;
-  height: 600px;
+  height: 400px;
   position: relative;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -418,7 +458,7 @@ article.card h3 {
   margin-top: 5px;
   margin-bottom: 10px;
   font-size: 14px;
-  color: white;
+  color: #8cbcb9;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -630,7 +670,7 @@ article.card p {
   article.card {
     text-align: center;
     width: 280px;
-    height: 490px;
+    height: 700px;
     position: relative;
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
@@ -658,7 +698,7 @@ article.card p {
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 14px;
-    color: #8cbcb9;
+    color: white;
     font-family: "Montserrat", sans-serif;
   }
   article.card p {
@@ -710,6 +750,38 @@ article.card p {
   .fa-globe,
   .fa-code {
     color: #8cbcb9;
+  }
+  .cardOne {
+    width: 280px;
+    height: 700px;
+  }
+  .cardTwo {
+    width: 280px;
+    height: 400px;
+  }
+  .cardThree {
+    width: 280px;
+    height: 400px;
+  }
+  .cardFour {
+    width: 280px;
+    height: 400px;
+  }
+  .cardFive {
+    width: 280px;
+    height: 400px;
+  }
+  .cardSix {
+    width: 280px;
+    height: 400px;
+  }
+  .cardSeven {
+    width: 280px;
+    height: 400px;
+  }
+  .cardEight {
+    width: 280px;
+    height: 400px;
   }
   /* MEDIA QUERY ENDS HERE */
 }
@@ -957,50 +1029,64 @@ article.card p {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: c1;
+    width: 280px;
+    height: 400px;
   }
   .cardTwo {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: c2;
+    width: 280px;
+    height: 400px;
   }
   .cardThree {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: c3;
+    width: 280px;
+    height: 400px;
   }
   .cardFour {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: c4;
+    width: 280px;
+    height: 400px;
   }
   .cardFive {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: c5;
+    width: 280px;
+    height: 400px;
   }
   .cardSix {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     grid-area: c6;
+    width: 280px;
+    height: 400px;
   }
   .cardSeven {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: c7;
+    width: 280px;
+    height: 400px;
   }
   .cardEight {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
     grid-area: c8;
+    width: 280px;
+    height: 400px;
   }
   main.cardlist {
     margin-left: -90px;
     display: -ms-grid;
     display: grid;
     height: 800px;
-        grid-template-areas: "c1 c2 c3"
- "c4 c5 c6"
- "c7 . c8";
+        grid-template-areas: "c1 c2 c3" "c4 c5 c6" "c7 . c8";
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     grid-gap: 45px;
@@ -1074,9 +1160,7 @@ article.card p {
     display: grid;
     width: 400px;
     height: 800px;
-        grid-template-areas: "c1 c2 c3"
- "c4 c5 c6"
- "c7 . c8";
+        grid-template-areas: "c1 c2 c3" "c4 c5 c6" "c7 . c8";
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 60px;
