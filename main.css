@@ -527,6 +527,9 @@ article.card p {
     width: 500px;
     height: 350px;
   }
+  .navbar .sunny {
+    margin-top: 20px;
+  }
   section.about1 {
     margin-left: 30px;
     width: 400px;
