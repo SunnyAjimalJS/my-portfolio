@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #2b3a41;
+  color: #b4b4b4;
   overflow-x: hidden;
 }
 
@@ -32,7 +32,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 3px solid #8cbcb9;
+  border-bottom: 3px solid #42a7b9ff;
   -webkit-box-shadow: 0 0px 10px 10px #d6d5d533;
           box-shadow: 0 0px 10px 10px #d6d5d533;
   padding: 20px;
@@ -42,16 +42,15 @@ body {
 }
 
 .navbar .sunny {
-  margin-top: 5px;
+  margin: 5px auto 5px auto;
   border-radius: 50%;
   width: 125px;
   height: 125px;
   opacity: 0.85;
-  margin-left: 20px;
 }
 
 .navbar #logo {
-  color: #8cbcb9;
+  color: #42a7b9ff;
   height: 200px;
   width: 300px;
   text-align: center;
@@ -65,14 +64,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 15px;
-}
-
-.navbar #logo div {
-  height: 3px;
-  width: 200px;
-  background-color: #8cbcb9;
-  margin-left: 50px;
+  margin: 0px auto 0px auto;
 }
 
 .navbar .s {
@@ -118,11 +110,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 180px;
-  margin-bottom: 10px;
-  margin-left: 18px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 350px;
+  margin: 10px auto 10px auto;
 }
 
 #contact {
@@ -138,7 +130,7 @@ body {
 .fa-github {
   -webkit-transition: 1s;
   transition: 1s;
-  color: #8cbcb9;
+  color: #42a7b9ff;
 }
 
 .fa-github:hover {
@@ -150,7 +142,7 @@ body {
 .fa-linkedin-in {
   -webkit-transition: 1s;
   transition: 1s;
-  color: #8cbcb9;
+  color: #42a7b9ff;
 }
 
 .fa-linkedin-in:hover {
@@ -162,7 +154,7 @@ body {
 .fa-envelope {
   -webkit-transition: 1s;
   transition: 1s;
-  color: #8cbcb9;
+  color: #42a7b9ff;
 }
 
 .fa-envelope:hover {
@@ -183,23 +175,23 @@ body {
 
 section.about1 {
   width: 320px;
-  height: 450px;
+  height: 425px;
   padding: 10px;
-  margin-left: 12px;
-  margin-top: 30px;
+  margin: 30px auto 0 auto;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .title {
-  color: #8cbcb9;
+  color: #42a7b9ff;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 .bodyText {
   line-height: 1.6;
-  color: #b4b4b4;
+  color: #2b3a41;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
 }
@@ -209,128 +201,6 @@ section.about1 {
   height: 400px;
 }
 
-.photos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: #42a7b9ff;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  background-color: #42a7b9ff;
-  max-width: 500px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* END */
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
@@ -344,12 +214,12 @@ section.about1 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #8cbcb9;
+  color: #8cbcb9;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #4f6d7a;
+  color: #4f6d7a;
 }
 
 .photos {
@@ -362,6 +232,10 @@ section.about1 {
   width: 370px;
   margin-left: -20px;
   margin-top: 20px;
+}
+
+.projectText h1.title {
+  color: #42a7b9ff;
 }
 
 section.projectList {
@@ -454,18 +328,18 @@ article.card {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-article.card h3 {
+article.card h3.title {
   margin-top: 5px;
   margin-bottom: 10px;
   font-size: 14px;
-  color: white;
+  color: #42a7b9ff;
   font-family: "Montserrat", sans-serif;
 }
 
 article.card p {
   text-align: center;
   margin-top: -10px;
-  color: #8cbcb9;
+  color: #2b3a41;
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
 }
@@ -482,7 +356,7 @@ article.card p {
   width: 250px;
   margin-bottom: -40px;
   margin-left: 11px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .cardIcons {
@@ -514,13 +388,13 @@ article.card p {
   opacity: 0.5;
 }
 
-.fa-globe,
-.fa-code {
-  color: #8cbcb9;
+.fa-globe:before,
+.fa-code:before {
+  color: #42a7b9ff;
 }
 
 .navbar-menu {
-  background-color: #8cbcb9;
+  color: #2b3a41;
   position: fixed;
   top: 0;
   left: 0;
@@ -550,7 +424,7 @@ article.card p {
 }
 
 .menu-listing li a {
-  background-color: #8cbcb9;
+  color: #2b3a41;
   color: #2b3a41;
   font-family: "Montserrat", sans-serif;
   display: block;
@@ -566,8 +440,8 @@ article.card p {
 }
 
 .menu-listing li a:hover {
-  background-color: #2b3a41;
-  color: #8cbcb9;
+  color: #2b3a41;
+  color: #2b3a41;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -576,7 +450,7 @@ article.card p {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #8cbcb9;
+  color: #2b3a41;
   height: 50px;
   width: 50px;
   cursor: pointer;
@@ -589,7 +463,7 @@ article.card p {
   position: absolute;
   height: 3px;
   width: 25px;
-  background-color: #2b3a41;
+  color: #2b3a41;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -602,7 +476,7 @@ article.card p {
   content: "";
   position: absolute;
   top: -8px;
-  background-color: #2b3a41;
+  color: #2b3a41;
   height: 3px;
   width: 25px;
   -webkit-transition: 0.3s;
@@ -613,7 +487,7 @@ article.card p {
   content: "";
   position: absolute;
   top: 8px;
-  background-color: #2b3a41;
+  color: #2b3a41;
   height: 3px;
   width: 25px;
   -webkit-transition: 0.3s;
@@ -705,7 +579,7 @@ article.card p {
   article.card p {
     text-align: center;
     margin-top: -10px;
-    color: #8cbcb9;
+    color: #2b3a41;
     font-size: 13px;
     font-family: "Montserrat", sans-serif;
   }
@@ -750,7 +624,7 @@ article.card p {
   }
   .fa-globe,
   .fa-code {
-    color: #8cbcb9;
+    color: #2b3a41;
   }
   /* MEDIA QUERY ENDS HERE */
 }
@@ -781,17 +655,32 @@ article.card p {
     position: fixed;
     height: 110%;
     margin-top: -100px;
-    border-right: 3px solid #8cbcb9;
+    border-right: 3px solid #2b3a41;
+    /* text animation */
   }
   .navbar .sunny {
     margin-top: 80px;
     margin-left: 25px;
   }
-  #logo {
-    color: #8cbcb9;
-    height: 200px;
+  .navbar #socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 300px;
     width: 200px;
-    margin-right: 15px;
+    margin: 150px 10px 10px auto;
+  }
+  .navbar div#logo {
+    color: #42a7b9ff;
+    height: 200px;
+    width: 10px;
+    margin: 50px auto auto 65px;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -803,23 +692,21 @@ article.card p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: -150px;
-    /* text animation */
   }
-  #logo div.line {
-    height: 3px;
-    width: 200px;
-    background-color: #8cbcb9;
-    margin-left: 65px;
-  }
-  #logo .s {
-    margin-left: 30px;
+  .navbar div#logo .s {
+    margin-left: -65px;
     font-size: 60px;
     font-family: "Montserrat", sans-serif;
     white-space: nowrap;
     overflow: hidden;
   }
-  #logo .s {
+  .navbar div#logo .ajimal {
+    margin-right: 35px;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.2em;
+  }
+  .navbar .s {
     -webkit-animation: animated-text 2s steps(30, end) 1s 1 normal both;
             animation: animated-text 2s steps(30, end) 1s 1 normal both;
   }
@@ -839,24 +726,6 @@ article.card p {
       width: 272px;
     }
   }
-  #logo .ajimal {
-    margin-left: 35px;
-    font-size: 25px;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 0.2em;
-  }
-  div#socials {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 200px;
-    margin-top: 150px;
-    margin-right: -20px;
-  }
   section.about1 {
     margin-bottom: 200px;
     color: #b4b4b4;
@@ -873,7 +742,7 @@ article.card p {
     margin-left: 460px;
     height: 60px;
     width: 25px;
-    color: #8cbcb9;
+    color: #2b3a41;
   }
   .container {
     position: relative;
@@ -906,7 +775,7 @@ article.card p {
     top: 0;
     height: 100%;
     width: 51%;
-    background: #8cbcb9;
+    color: #42a7b9ff;
   }
   .chevron:before {
     left: 0;
@@ -965,7 +834,7 @@ article.card p {
     margin-left: -30px;
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-size: 12px;
-    color: #8cbcb9;
+    color: #2b3a41;
     text-transform: uppercase;
     white-space: nowrap;
     opacity: 0.25;
