@@ -549,7 +549,7 @@ article.card p {
   article.card {
     text-align: center;
     width: 280px;
-    height: 400px;
+    height: 500px;
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     transition: transform 1s;
